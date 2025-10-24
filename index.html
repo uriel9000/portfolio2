@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Christopher Mumba — AI Developer, Cybersecurity Student & Web Developer. Portfolio showcasing projects, skills and contact." />
+  <title>Christopher Mumba — Portfolio</title>
+
+  <!-- PWA & theme -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#4F46E5">
+  <link rel="icon" href="icon-192.png" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { darkMode: 'class' }</script>
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    :root { --accent: #4F46E5; }
+    body { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+    /* small helper for typewriter */
+    .typewriter > .wrap { border-right: .12em solid rgba(79,70,229,.7); }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-indigo-50 via-purple-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-gray-800 dark:text-gray-100">
+
+  <!-- NAV -->
+  <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <img src="icon-192.png.webp" alt="logo" class="w-10 h-10 rounded-md shadow"/>
+      <div>
+        <div class="text-lg font-bold text-indigo-600 dark:text-indigo-300">Christopher Mumba</div>
+        <div class="text-xs text-gray-600 dark:text-gray-300">AI · Cybersecurity · Web</div>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3">
+      <button id="themeToggle" aria-label="Toggle theme" class="p-2 rounded-md bg-white/60 dark:bg-gray-800/60 shadow-sm">
+        <i id="themeIcon" class="fa-solid fa-moon text-indigo-600"></i>
+      </button>
+      <a href="#projects" class="hidden md:inline px-3 py-2 rounded-md hover:bg-indigo-100 dark:hover:bg-gray-700">Projects</a>
+      <a href="#contact" class="hidden md:inline px-3 py-2 rounded-md bg-indigo-600 text-white">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="max-w-6xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center gap-12">
+    <div class="flex-1">
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4 text-indigo-700 dark:text-indigo-300">Christopher Mumba</h1>
+      <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">AI-powered innovator, cybersecurity student & full-stack web developer.</p>
+
+      <p class="typewriter text-indigo-600 font-medium mb-6"><span class="wrap" id="typewriter"></span></p>
+
+      <div class="flex gap-3">
+        <a href="#projects" class="px-5 py-3 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700">View Work</a>
+        <a href="Christopher_Mumba_CV.pdf" download class="px-5 py-3 border border-indigo-600 text-indigo-600 rounded-lg hover:bg-indigo-50">Download CV</a>
+      </div>
+
+      <div class="mt-6 flex gap-3 text-gray-600 dark:text-gray-300">
+        <a aria-label="GitHub" href="https://github.com/uriel9000.github.io" target="_blank" class="hover:text-indigo-600"><i class="fab fa-github fa-lg"></i></a>
+        <a aria-label="LinkedIn" href="https://www.linkedin.com/in/your-linkedin" target="_blank" class="hover:text-indigo-600"><i class="fab fa-linkedin fa-lg"></i></a>
+        <a aria-label="TikTok" href="#" target="_blank" class="hover:text-indigo-600"><i class="fab fa-tiktok fa-lg"></i></a>
+      </div>
+    </div>
+
+    <div class="w-full md:w-96 bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6">
+      <div class="text-sm text-gray-500 dark:text-gray-300 mb-3">Quick profile</div>
+      <div class="flex items-center gap-4 mb-3">
+        <img src="chris.webp" alt="profile" class="w-16 h-16 rounded-full" />
+        <div>
+          <div class="font-semibold">Christopher Mumba</div>
+          <div class="text-xs text-gray-500 dark:text-gray-400">Zambia · Threat Intelligence Analyst</div>
+        </div>
+      </div>
+      <div class="text-sm text-gray-600 dark:text-gray-300">I build secure, privacy-first web apps (PWA), integrate AI where it adds value, and apply threat modelling to keep users safe.</div>
+    </div>
+  </header>
+
+  <!-- SKILLS -->
+  <section id="skills" class="max-w-6xl mx-auto px-6 py-8">
+    <h3 class="text-xl font-semibold mb-4">Skills</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow">
+        <h4 class="font-semibold mb-2">Web</h4>
+        <ul class="text-sm text-gray-600 dark:text-gray-300 space-y-1">
+          <li>HTML / CSS / JavaScript</li>
+          <li>Tailwind, Vanilla JS, PWA</li>
+          <li>PHP / MySQL</li>
+        </ul>
+      </div>
+      <div class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow">
+        <h4 class="font-semibold mb-2">AI & Automation</h4>
+        <ul class="text-sm text-gray-600 dark:text-gray-300 space-y-1">
+          <li>Machine Learning prototyping (Python)</li>
+          <li>YOLOv2 experiments (CV)</li>
+          <li>AI-assisted UX</li>
+        </ul>
+      </div>
+      <div class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow">
+        <h4 class="font-semibold mb-2">Security</h4>
+        <ul class="text-sm text-gray-600 dark:text-gray-300 space-y-1">
+          <li>Threat intelligence & modelling</li>
+          <li>Secure design, MFA, encryption</li>
+          <li>Tools: Wireshark, Kali, Burp</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="max-w-6xl mx-auto px-6 py-12">
+    <div class="flex items-center justify-between mb-6">
+      <h3 class="text-2xl font-semibold">Selected Projects</h3>
+      <a href="projects.html" class="text-indigo-600 hover:underline">See all</a>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Project card example -->
+      <article class="bg-white dark:bg-gray-800 rounded-2xl shadow p-5 hover:shadow-lg transition">
+        <div class="flex items-center justify-between mb-3">
+          <h4 class="font-semibold">BMI Fit (PWA)</h4>
+          <span class="text-xs text-gray-500">2025</span>
+        </div>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">Privacy-first BMI calculator PWA with optional cloud sync, email verification, and analytics dashboard.</p>
+        <div class="flex gap-2">
+          <a href="https://github.com/your-github/bmi-fit" target="_blank" class="px-3 py-1 bg-indigo-600 text-white rounded text-sm">Code</a>
+          <a href="#" class="px-3 py-1 border rounded text-sm">Live</a>
+        </div>
+      </article>
+
+      <article class="bg-white dark:bg-gray-800 rounded-2xl shadow p-5 hover:shadow-lg transition">
+        <div class="flex items-center justify-between mb-3">
+          <h4 class="font-semibold">Traffic Light AI (YOLOv2)</h4>
+          <span class="text-xs text-gray-500">2024</span>
+        </div>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">Computer vision prototype to detect vehicles and optimise signals using YOLOv2.</p>
+        <div class="flex gap-2">
+          <a href="#" class="px-3 py-1 bg-indigo-600 text-white rounded text-sm">Case</a>
+          <a href="#" class="px-3 py-1 border rounded text-sm">Demo</a>
+        </div>
+      </article>
+
+      <article class="bg-white dark:bg-gray-800 rounded-2xl shadow p-5 hover:shadow-lg transition">
+        <div class="flex items-center justify-between mb-3">
+          <h4 class="font-semibold">Access Control (QR/ID)</h4>
+          <span class="text-xs text-gray-500">2023</span>
+        </div>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">ID scanner & QR-based guest tracking for events and access control systems.</p>
+        <div class="flex gap-2">
+          <a href="#" class="px-3 py-1 bg-indigo-600 text-white rounded text-sm">Code</a>
+          <a href="#" class="px-3 py-1 border rounded text-sm">Docs</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="max-w-3xl mx-auto px-6 py-12">
+    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow p-6">
+      <h3 class="text-xl font-semibold mb-4">Get in touch</h3>
+      <form id="contactForm" class="grid grid-cols-1 gap-3">
+        <input type="text" id="c_name" placeholder="Your name" required class="p-3 border rounded-md dark:bg-gray-700 dark:text-gray-100" />
+        <input type="email" id="c_email" placeholder="Your email" required class="p-3 border rounded-md dark:bg-gray-700 dark:text-gray-100" />
+        <textarea id="c_message" rows="4" placeholder="Message" required class="p-3 border rounded-md dark:bg-gray-700 dark:text-gray-100"></textarea>
+        <div class="flex items-center gap-3">
+          <button id="contactBtn" class="px-4 py-2 bg-indigo-600 text-white rounded-md">Send Message</button>
+          <div id="contactMsg" class="text-sm"></div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="mt-12 py-8 border-t border-gray-200 dark:border-gray-700">
+    <div class="max-w-6xl mx-auto px-6 text-center text-sm text-gray-600 dark:text-gray-300">
+      <div>Built by <strong>Christopher Mumba</strong> — Threat Intelligence Analyst & Developer</div>
+      <div class="mt-2">© 2025 — <a href="#" class="text-indigo-600 hover:underline">Privacy</a> · <a href="#" class="text-indigo-600 hover:underline">Terms</a></div>
+    </div>
+  </footer>
+
+  <!-- Service Worker registration (PWA) -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js').catch(()=>{});
+    }
+  </script>
+
+  <!-- Typewriter and UI JS -->
+  <script>
+    // typewriter
+    (function(){
+      const phrases = ["Threat Intelligence Analyst","AI + Web Developer","Privacy-first PWA Builder","Open Source Contributor"];
+      let el = document.getElementById('typewriter');
+      let loop = 0, txt = '', isDeleting=false; let i=0;
+      function tick(){
+        const full = phrases[loop%phrases.length];
+        txt = isDeleting ? full.substring(0, txt.length-1) : full.substring(0, txt.length+1);
+        el.innerHTML = txt;
+        let delta = 120 - Math.random()*60;
+        if(!isDeleting && txt === full){ delta = 2000; isDeleting = true; }
+        else if(isDeleting && txt === ''){ isDeleting=false; loop++; delta=500; }
+        setTimeout(tick, delta);
+      }
+      tick();
+    })();
+
+    // Theme toggle
+    const root = document.documentElement;
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+    if(localStorage.getItem('theme')==='dark'){ root.classList.add('dark'); themeIcon.className='fa-solid fa-sun text-yellow-400'; }
+    themeToggle.addEventListener('click', ()=>{
+      root.classList.toggle('dark');
+      if(root.classList.contains('dark')){ localStorage.setItem('theme','dark'); themeIcon.className='fa-solid fa-sun text-yellow-400'; }
+      else{ localStorage.setItem('theme','light'); themeIcon.className='fa-solid fa-moon text-indigo-600'; }
+    });
+
+    // Contact form (Formspree fallback)
+    document.getElementById('contactForm').addEventListener('submit', async function(e){
+      e.preventDefault();
+      const name=document.getElementById('c_name').value.trim();
+      const email=document.getElementById('c_email').value.trim();
+      const message=document.getElementById('c_message').value.trim();
+      const contactMsg=document.getElementById('contactMsg');
+      contactMsg.textContent='Sending...';
+
+      try{
+        // Try Formspree. Replace FORM_ID with your endpoint.
+        const res = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+          method: 'POST', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name, email, message })
+        });
+        if(res.ok){ contactMsg.innerHTML='<span class="text-green-600">Message sent — I will reply soon.</span>'; this.reset(); }
+        else{ throw new Error('Form error'); }
+      }catch(err){
+        contactMsg.innerHTML='<span class="text-red-600">Failed to send. Email: support@bmifit.com</span>';
+      }
+    });
+  </script>
+</body>
+</html>
